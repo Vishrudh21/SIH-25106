@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Internship & Placement Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">CampusFlow</div>
+        <a href="#features">Features</a>
+        <a href="#personas">Personas</a>
+        <a href="#journeys">Journeys</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Internships • Industrial Training • Placements</p>
+          <h1>One Portal For Every Campus Career Journey</h1>
+          <p class="hero-copy">
+            Replace scattered emails, WhatsApp threads, and spreadsheets with a
+            role-aware platform that matches students to the right opportunities,
+            automates mentor approvals, streamlines interviews, and surfaces
+            real-time placement intelligence.
+          </p>
+          <div class="hero-cta">
+            <button class="primary">Explore Blueprint</button>
+            <button class="secondary">Download Plan</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span>70%</span>
+              <p>Faster approvals</p>
+            </div>
+            <div>
+              <span>90%</span>
+              <p>Profiles kept current</p>
+            </div>
+            <div>
+              <span>50%</span>
+              <p>Fewer missed deadlines</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Active Pipeline</h3>
+          <ul>
+            <li>
+              <p>Applied</p>
+              <span>124</span>
+            </li>
+            <li>
+              <p>Interviews</p>
+              <span>48</span>
+            </li>
+            <li>
+              <p>Offers</p>
+              <span>26</span>
+            </li>
+          </ul>
+          <div class="progress">
+            <p>Placement Readiness</p>
+            <div class="bar"><span style="width: 78%"></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Platform Highlights</p>
+        <h2>Built for Students, Mentors, and Placement Cells</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <h3>Unified Profiles</h3>
+          <p>
+            Students maintain verified resumes, skills badges, preferences, and
+            certificates once per semester with role-based visibility.
+          </p>
+        </article>
+        <article>
+          <h3>Smart Opportunity Matching</h3>
+          <p>
+            Eligibility filters, weighted skill scoring, and preference bonuses
+            surface best-fit internships and training programs.
+          </p>
+        </article>
+        <article>
+          <h3>Mentor & Supervisor Workflows</h3>
+          <p>
+            Automated approval requests, interview nudges, milestone tracking,
+            and evaluation flows keep stakeholders aligned.
+          </p>
+        </article>
+        <article>
+          <h3>Placement Command Center</h3>
+          <p>
+            Real-time dashboards, Kanban pipelines, employer engagement metrics,
+            and exportable compliance reports.
+          </p>
+        </article>
+        <article>
+          <h3>Engaging Student Experience</h3>
+          <p>
+            Readiness scores, badge progress, story widgets, and personalized
+            nudges make the journey inspiring.
+          </p>
+        </article>
+        <article>
+          <h3>Low-Cost, Secure Stack</h3>
+          <p>
+            Open-source tooling (React, Node/Nest, PostgreSQL, Redis, MinIO,
+            Keycloak) with role-based access and audit logs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="personas" class="section tint">
+      <div class="section-heading">
+        <p class="eyebrow">People First</p>
+        <h2>Personas Driving the Experience</h2>
+      </div>
+      <div class="persona-list">
+        <article>
+          <h3>Students</h3>
+          <p>
+            Discover roles, apply in one click, monitor status, log internship
+            outcomes, and showcase verified achievements.
+          </p>
+        </article>
+        <article>
+          <h3>Faculty Mentors</h3>
+          <p>
+            Approve applications, add recommendations, and follow every advisee
+            through interviews to offers.
+          </p>
+        </article>
+        <article>
+          <h3>Placement Officers</h3>
+          <p>
+            Publish verified postings, track seat fulfillment, coordinate
+            employers, and broadcast updates campus-wide.
+          </p>
+        </article>
+        <article>
+          <h3>Employers</h3>
+          <p>
+            Receive curated shortlists, review anonymized snapshots, schedule
+            interviews, and update offer decisions securely.
+          </p>
+        </article>
+        <article>
+          <h3>Industry Supervisors</h3>
+          <p>
+            Record attendance, milestone achievements, and final feedback to
+            trigger instant certificate generation.
+          </p>
+        </article>
+        <article>
+          <h3>Admins</h3>
+          <p>
+            Oversee RBAC, data retention, integrations, and observability to
+            keep the platform compliant and resilient.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="journeys" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience Maps</p>
+        <h2>Signature User Journeys</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <h3>Student</h3>
+          <ul>
+            <li>Complete onboarding wizard & upload resume</li>
+            <li>Review personalized recommendations</li>
+            <li>Apply, track mentor approvals, confirm interviews</li>
+            <li>Receive supervisor feedback & certificates</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Placement Officer</h3>
+          <ul>
+            <li>Publish verified opportunities with competency tags</li>
+            <li>Monitor Kanban pipeline & nudge stakeholders</li>
+            <li>Export analytics for leadership & regulators</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Mentor</h3>
+          <ul>
+            <li>Approve/return applications with context</li>
+            <li>Track advisee pipeline & send nudges</li>
+            <li>Finalize internship evaluations</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Supervisor</h3>
+          <ul>
+            <li>Log weekly attendance & milestones</li>
+            <li>Submit final evaluation</li>
+            <li>Trigger certificate + readiness update</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="architecture" class="section tint">
+      <div class="section-heading">
+        <p class="eyebrow">Under the Hood</p>
+        <h2>Architecture & Data Backbone</h2>
+      </div>
+      <div class="architecture">
+        <div>
+          <h3>Stack Overview</h3>
+          <p>
+            Responsive React/PWA frontend, NestJS API, PostgreSQL core database,
+            Redis cache, MinIO/S3 storage, Keycloak auth, and workflow /
+            notification microservices orchestrated via queues.
+          </p>
+          <p>
+            Integrations cover campus SSO, calendar sync (ICS/Google), SMTP/SMS,
+            and analytics dashboards (Metabase/Grafana).
+          </p>
+        </div>
+        <pre>
+Frontend → API Gateway → Services (Profiles, Opportunities, Matching, Workflow)
+          ↘ Redis Cache / PostgreSQL / Object Storage
+Workflow → Notifications → Email / SMS / Calendar
+Observability → Logs, Metrics, Alerts</pre
+        >
+      </div>
+      <div class="data-cards">
+        <article>
+          <h4>StudentProfile</h4>
+          <p>academic_details, skills[], resume_url, badges[], readiness_score</p>
+        </article>
+        <article>
+          <h4>Opportunity</h4>
+          <p>title, department_ids[], required_skills[], stipend_range, status</p>
+        </article>
+        <article>
+          <h4>Application</h4>
+          <p>student_id, opportunity_id, status, mentor_id, score_breakdown</p>
+        </article>
+        <article>
+          <h4>Feedback & Logs</h4>
+          <p>mentor_decisions, supervisor_reviews, audit trails, notifications</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Execution Plan</p>
+        <h2>Roadmap & Workstreams</h2>
+      </div>
+      <div class="roadmap">
+        <article>
+          <h3>Discovery (Weeks 1-2)</h3>
+          <p>Stakeholder workshops, persona validation, UX research.</p>
+        </article>
+        <article>
+          <h3>Architecture (Weeks 3-4)</h3>
+          <p>Infra setup, CI/CD, auth integration, schema design.</p>
+        </article>
+        <article>
+          <h3>MVP Build (Weeks 5-10)</h3>
+          <p>Profiles, postings, matching, applications, approvals, notifications.</p>
+        </article>
+        <article>
+          <h3>Pilot (Weeks 11-12)</h3>
+          <p>Limited rollout, metrics, tuning matching weights.</p>
+        </article>
+        <article>
+          <h3>Enhancements (Weeks 13-16)</h3>
+          <p>Analytics, scheduler, supervisor portal, certificates.</p>
+        </article>
+        <article>
+          <h3>Launch (Weeks 17-18)</h3>
+          <p>Campus onboarding, training, support playbooks.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="section tint">
+      <div class="footer-content">
+        <div>
+          <p class="eyebrow">CampusFlow</p>
+          <p>
+            A secure, low-cost internship and placement platform designed to
+            empower students and placement teams alike.
+          </p>
+        </div>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <p>placement@campusflow.edu</p>
+        </div>
+        <div>
+          <p class="eyebrow">Next Step</p>
+          <p>Book a discovery workshop to kickstart your rollout.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
