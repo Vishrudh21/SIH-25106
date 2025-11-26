@@ -36,14 +36,14 @@ function animateValue(element, start, end, duration) {
 // Intersection Observer for scroll animations
 const observerOptions = {
   threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px"
+  rootMargin: "0px 0px -50px 0px",
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("fade-in");
-      
+
       // Trigger number animation for stats
       if (entry.target.classList.contains("animate-number")) {
         const targetValue = parseInt(entry.target.dataset.target);
@@ -53,7 +53,7 @@ const observer = new IntersectionObserver((entries) => {
           animateValue(numberElement, 0, targetValue, 2000);
         }
       }
-      
+
       observer.unobserve(entry.target);
     }
   });
@@ -67,20 +67,55 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Animate dashboard cards
-  document.querySelectorAll(".dashboard-stat-card, .pipeline-card, .recommendation-card").forEach((el, index) => {
-    el.style.animationDelay = `${index * 0.1}s`;
-    observer.observe(el);
-  });
-
+  document
+    .querySelectorAll(
+      ".dashboard-stat-card, .pipeline-card, .recommendation-card"
+    )
+    .forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.1}s`;
+      observer.observe(el);
+    });
 
   // Animate certificate cards
-  document.querySelectorAll(".certificate-preview-card, .certificate-process-card").forEach((el, index) => {
+  document
+    .querySelectorAll(".certificate-preview-card, .certificate-process-card")
+    .forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.1}s`;
+      observer.observe(el);
+    });
+
+  // Animate feature cards on scroll
+  document
+    .querySelectorAll(
+      ".feature-grid article, .feature-card, .persona-list article, .persona-card"
+    )
+    .forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.1}s`;
+      observer.observe(el);
+    });
+
+  // Animate workflow cards
+  document.querySelectorAll(".workflow-card").forEach((el, index) => {
     el.style.animationDelay = `${index * 0.1}s`;
     observer.observe(el);
   });
 
-  // Animate feature cards on scroll
-  document.querySelectorAll(".feature-grid article, .persona-list article").forEach((el, index) => {
+  // Animate journey cards
+  document.querySelectorAll(".journey-card").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+
+  // Animate architecture cards
+  document
+    .querySelectorAll(".architecture-card, .architecture-diagram")
+    .forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.1}s`;
+      observer.observe(el);
+    });
+
+  // Animate roadmap phases
+  document.querySelectorAll(".roadmap-phase").forEach((el, index) => {
     el.style.animationDelay = `${index * 0.1}s`;
     observer.observe(el);
   });
@@ -90,19 +125,54 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.animationDelay = `${index * 0.1}s`;
     observer.observe(el);
   });
-});
 
+  // Animate problem cards
+  document.querySelectorAll(".problem-card").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+
+  // Animate solution pillars
+  document.querySelectorAll(".solution-pillar").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+
+  // Animate impact cards
+  document.querySelectorAll(".impact-card").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+
+  // Animate differentiator cards
+  document.querySelectorAll(".differentiator-card").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+
+  // Animate benefit cards
+  document.querySelectorAll(".benefit-card").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+
+  // Animate institution feature cards
+  document.querySelectorAll(".institution-feature").forEach((el, index) => {
+    el.style.animationDelay = `${index * 0.1}s`;
+    observer.observe(el);
+  });
+});
 
 // Pipeline node hover effects
 document.querySelectorAll(".pipeline-node").forEach((node) => {
-  node.addEventListener("mouseenter", function() {
+  node.addEventListener("mouseenter", function () {
     const circle = this.querySelector(".node-circle");
     if (circle) {
       circle.style.transform = "scale(1.15)";
     }
   });
-  
-  node.addEventListener("mouseleave", function() {
+
+  node.addEventListener("mouseleave", function () {
     const circle = this.querySelector(".node-circle");
     if (circle) {
       circle.style.transform = "scale(1)";
@@ -112,34 +182,36 @@ document.querySelectorAll(".pipeline-node").forEach((node) => {
 
 // Apply button interactions
 document.querySelectorAll(".match-apply-button").forEach((btn) => {
-  btn.addEventListener("click", function(e) {
+  btn.addEventListener("click", function (e) {
     e.preventDefault();
     const originalText = this.textContent;
     this.textContent = "✓ Application Sent!";
     this.style.background = "linear-gradient(135deg, #1fbe92, #0fa077)";
-    
+
     setTimeout(() => {
       this.textContent = originalText;
-      this.style.background = "linear-gradient(135deg, var(--accent), var(--accent-dark))";
+      this.style.background =
+        "linear-gradient(135deg, var(--accent), var(--accent-dark))";
     }, 2000);
   });
 });
 
 // Certificate download button
 document.querySelectorAll(".cert-download-button").forEach((btn) => {
-  btn.addEventListener("click", function(e) {
+  btn.addEventListener("click", function (e) {
     e.preventDefault();
     const originalText = this.textContent;
     this.innerHTML = '<span class="download-icon">⏳</span> Generating PDF...';
     this.disabled = true;
-    
+
     setTimeout(() => {
       this.innerHTML = '<span class="download-icon">✓</span> Downloaded!';
       this.style.background = "linear-gradient(135deg, #1fbe92, #0fa077)";
-      
+
       setTimeout(() => {
         this.innerHTML = originalText;
-        this.style.background = "linear-gradient(135deg, var(--accent), var(--accent-dark))";
+        this.style.background =
+          "linear-gradient(135deg, var(--accent), var(--accent-dark))";
         this.disabled = false;
       }, 2000);
     }, 1500);
@@ -157,53 +229,61 @@ window.addEventListener("scroll", () => {
 });
 
 // Enhanced card hover effects
-document.querySelectorAll(".feature-grid article, .persona-list article").forEach((card) => {
-  card.addEventListener("mouseenter", function() {
-    this.style.boxShadow = "0 25px 50px rgba(108, 240, 194, 0.3)";
+document
+  .querySelectorAll(".feature-grid article, .persona-list article")
+  .forEach((card) => {
+    card.addEventListener("mouseenter", function () {
+      this.style.boxShadow = "0 25px 50px rgba(108, 240, 194, 0.3)";
+    });
+
+    card.addEventListener("mouseleave", function () {
+      this.style.boxShadow = "0 18px 35px rgba(0, 0, 0, 0.35)";
+    });
   });
-  
-  card.addEventListener("mouseleave", function() {
-    this.style.boxShadow = "0 18px 35px rgba(0, 0, 0, 0.35)";
-  });
-});
 
 // Progress bar animation on scroll
 const progressBars = document.querySelectorAll(".bar span, .metric-bar");
-const progressObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const computedStyle = window.getComputedStyle(entry.target);
-      const width = entry.target.style.width || computedStyle.width;
-      entry.target.style.width = "0%";
-      setTimeout(() => {
-        entry.target.style.width = width;
-      }, 200);
-      progressObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
+const progressObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const computedStyle = window.getComputedStyle(entry.target);
+        const width = entry.target.style.width || computedStyle.width;
+        entry.target.style.width = "0%";
+        setTimeout(() => {
+          entry.target.style.width = width;
+        }, 200);
+        progressObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
 
 progressBars.forEach((bar) => {
   progressObserver.observe(bar);
 });
 
 // Animate metric bars on scroll
-const metricBarObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const metricBar = entry.target.querySelector(".metric-bar");
-      if (metricBar) {
-        const computedStyle = window.getComputedStyle(metricBar);
-        const width = metricBar.style.getPropertyValue("--bar-width") || "0%";
-        metricBar.style.setProperty("--bar-width", "0%");
-        setTimeout(() => {
-          metricBar.style.setProperty("--bar-width", width);
-        }, 200);
+const metricBarObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const metricBar = entry.target.querySelector(".metric-bar");
+        if (metricBar) {
+          const computedStyle = window.getComputedStyle(metricBar);
+          const width = metricBar.style.getPropertyValue("--bar-width") || "0%";
+          metricBar.style.setProperty("--bar-width", "0%");
+          setTimeout(() => {
+            metricBar.style.setProperty("--bar-width", width);
+          }, 200);
+        }
+        metricBarObserver.unobserve(entry.target);
       }
-      metricBarObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
+    });
+  },
+  { threshold: 0.5 }
+);
 
 document.querySelectorAll(".match-metric").forEach((metric) => {
   metricBarObserver.observe(metric);
@@ -237,7 +317,7 @@ window.addEventListener("load", () => {
       animateValue(stat, 0, targetValue, 2000);
     }, index * 300);
   });
-  
+
   // Also animate hero card numbers
   const heroCardSpans = document.querySelectorAll(".hero-card ul li span");
   heroCardSpans.forEach((span, index) => {
@@ -245,7 +325,6 @@ window.addEventListener("load", () => {
       const targetValue = parseInt(span.textContent);
       span.textContent = "0";
       animateValue(span, 0, targetValue, 1500);
-    }, 1000 + (index * 200));
+    }, 1000 + index * 200);
   });
 });
-

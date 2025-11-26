@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Internship & Placement Portal</title>
+    <title>PlacementHub - Campus Placement & Internship Portal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,571 +11,738 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
+</head>
+<body>
+    <!-- Navigation & Hero -->
     <header class="hero">
-      <nav class="nav">
-        <div class="logo">CampusFlow</div>
-        <a href="#dashboard">Dashboard</a>
-        <a href="#features">Features</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#personas">Personas</a>
-        <a href="#journeys">Journeys</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#roadmap">Roadmap</a>
-      </nav>
-      <div class="hero-content">
-        <div>
-          <p class="eyebrow">Internships • Industrial Training • Placements</p>
-          <h1>One Portal For Every Campus Career Journey</h1>
-          <p class="hero-copy">
-            Replace scattered emails, WhatsApp threads, and spreadsheets with a
-            role-aware platform that matches students to the right opportunities,
-            automates mentor approvals, streamlines interviews, and surfaces
-            real-time placement intelligence.
-          </p>
-          <div class="hero-cta">
-            <button class="primary">Explore Blueprint</button>
-            <button class="secondary">Download Plan</button>
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat-item">
-              <span class="hero-stat-number" data-target="70">0</span><span>%</span>
-              <p>Faster approvals</p>
+        <nav class="nav">
+            <div class="logo">🎓 PlacementHub</div>
+            <a href="#problem">The Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#features">Features</a>
+            <a href="#students">For Students</a>
+            <a href="#institution">For Institution</a>
+            <a href="#impact">Impact</a>
+            <a href="#roadmap">Timeline</a>
+        </nav>
+        <div class="hero-content">
+            <div>
+                <p class="eyebrow">Transform Campus Placements</p>
+                <h1>Unified Placement Ecosystem</h1>
+                <p class="hero-copy">
+                    Replace scattered WhatsApp groups, endless emails, and manual spreadsheets 
+                    with an intelligent, role-based campus placement portal. Match students 
+                    to perfect opportunities in one click. Automate approvals. Track everything in real-time.
+                </p>
+                <div class="hero-cta">
+                    <button class="primary">Explore the Platform</button>
+                    <button class="secondary">Download Proposal</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number" data-target="70">0</span><span>%</span>
+                        <p>Faster Approvals</p>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number" data-target="100">0</span><span>%</span>
+                        <p>Digital Workflow</p>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number" data-target="90">0</span><span>%</span>
+                        <p>Time Saved</p>
+                    </div>
+                </div>
             </div>
-            <div class="hero-stat-item">
-              <span class="hero-stat-number" data-target="90">0</span><span>%</span>
-              <p>Profiles kept current</p>
+            <div class="hero-card">
+                <h3>Current Pain Points</h3>
+                <ul>
+                    <li>
+                        <p>📧 Scattered notices</p>
+                        <span><strong>87%</strong> use WhatsApp & email</span>
+                    </li>
+                    <li>
+                        <p>⏳ Manual tracking</p>
+                        <span><strong>72%</strong> lost in spreadsheets</span>
+                    </li>
+                    <li>
+                        <p>❌ Missed deadlines</p>
+                        <span><strong>64%</strong> no centralized info</span>
+                    </li>
+                </ul>
+                <div class="progress">
+                    <p>Problem Coverage</p>
+                    <div class="bar"><span style="width: 95%"></span></div>
+                    <span style="font-weight: bold; color: #6cf0c2;">95%</span>
+                </div>
             </div>
-            <div class="hero-stat-item">
-              <span class="hero-stat-number" data-target="50">0</span><span>%</span>
-              <p>Fewer missed deadlines</p>
-            </div>
-          </div>
         </div>
-        <div class="hero-card">
-          <h3>Active Pipeline</h3>
-          <ul>
-            <li>
-              <p>Applied</p>
-              <span>124</span>
-            </li>
-            <li>
-              <p>Interviews</p>
-              <span>48</span>
-            </li>
-            <li>
-              <p>Offers</p>
-              <span>26</span>
-            </li>
-          </ul>
-          <div class="progress">
-            <p>Placement Readiness</p>
-            <div class="bar"><span style="width: 78%"></span></div>
-          </div>
-        </div>
-      </div>
     </header>
 
-    <!-- Interactive Dashboard Preview Section -->
-    <section id="dashboard" class="section tint">
-      <div class="section-heading">
-        <p class="eyebrow">Live Preview</p>
-        <h2>Placement Command Center</h2>
-        <p class="section-subtitle">Real-time analytics and application tracking in action</p>
-      </div>
-      <div class="dashboard-grid">
-        <article class="dashboard-stat-card animate-number" data-target="124">
-          <div class="stat-icon-wrapper">
-            <div class="stat-icon">📊</div>
-          </div>
-          <h3 class="stat-number">0</h3>
-          <p>Active Applications</p>
-          <div class="stat-trend">↑ 12% this week</div>
-        </article>
-        <article class="dashboard-stat-card animate-number" data-target="48">
-          <div class="stat-icon-wrapper">
-            <div class="stat-icon">📅</div>
-          </div>
-          <h3 class="stat-number">0</h3>
-          <p>Scheduled Interviews</p>
-          <div class="stat-trend">↑ 8% this week</div>
-        </article>
-        <article class="dashboard-stat-card animate-number" data-target="26">
-          <div class="stat-icon-wrapper">
-            <div class="stat-icon">🎯</div>
-          </div>
-          <h3 class="stat-number">0</h3>
-          <p>Offers Extended</p>
-          <div class="stat-trend">↑ 15% this week</div>
-        </article>
-        <article class="dashboard-stat-card animate-number" data-target="89">
-          <div class="stat-icon-wrapper">
-            <div class="stat-icon">✅</div>
-          </div>
-          <h3 class="stat-number">0</h3>
-          <p>Placement Rate %</p>
-          <div class="stat-trend">↑ 5% this week</div>
-        </article>
-      </div>
-      
-      <!-- Application Pipeline Visualization -->
-      <div class="dashboard-grid pipeline-section">
-        <article class="pipeline-card">
-          <h3>Application Pipeline</h3>
-          <div class="pipeline-visual">
-            <div class="pipeline-flow">
-              <div class="pipeline-node">
-                <div class="node-circle applied-node"></div>
-                <div class="node-label">Applied</div>
-                <div class="node-count">124</div>
-              </div>
-              <div class="pipeline-connector-line"></div>
-              <div class="pipeline-node">
-                <div class="node-circle review-node"></div>
-                <div class="node-label">Review</div>
-                <div class="node-count">87</div>
-              </div>
-              <div class="pipeline-connector-line"></div>
-              <div class="pipeline-node">
-                <div class="node-circle interview-node"></div>
-                <div class="node-label">Interview</div>
-                <div class="node-count">48</div>
-              </div>
-              <div class="pipeline-connector-line"></div>
-              <div class="pipeline-node">
-                <div class="node-circle offer-node"></div>
-                <div class="node-label">Offers</div>
-                <div class="node-count">26</div>
-              </div>
-            </div>
-          </div>
-        </article>
-        
-        <!-- Recommendation Engine Demo -->
-        <article class="recommendation-card">
-          <div class="match-header-card">
-            <span class="match-percentage">95% Match</span>
-            <h4>Full-Stack Developer Intern</h4>
-          </div>
-          <div class="match-details-card">
-            <p><strong>Skills:</strong> React, Node.js, PostgreSQL</p>
-            <p><strong>Stipend:</strong> ₹15,000 - ₹25,000/month</p>
-              <div class="match-breakdown">
-              <div class="match-metric" data-width="95">
-                <span>Skills Match</span>
-                <div class="metric-bar-wrapper">
-                  <div class="metric-bar" style="--bar-width: 95%"></div>
-                  <span class="metric-percent">95%</span>
+    <!-- The Problem Section -->
+    <section id="problem" class="section tint">
+        <div class="section-heading">
+            <p class="eyebrow">Current State</p>
+            <h2>Why Campus Placements Are Broken</h2>
+            <p class="section-subtitle">The real challenges students, mentors, and placement cells face every day</p>
+        </div>
+        <div class="problem-grid">
+            <article class="problem-card student-problem">
+                <div class="problem-icon">👨‍🎓</div>
+                <h3>Student Frustrations</h3>
+                <ul>
+                    <li>Notices scattered across WhatsApp groups</li>
+                    <li>No way to track application status</li>
+                    <li>Miss deadlines due to poor communication</li>
+                    <li>Manual resume uploads for each company</li>
+                    <li>No visibility into interview schedule</li>
+                </ul>
+            </article>
+            <article class="problem-card mentor-problem">
+                <div class="problem-icon">👨‍🏫</div>
+                <h3>Mentor Challenges</h3>
+                <ul>
+                    <li>No systematic approval workflow</li>
+                    <li>Multiple emails asking same questions</li>
+                    <li>Difficult to track advisee progress</li>
+                    <li>Manual context gathering for decisions</li>
+                    <li>No audit trail for compliance</li>
+                </ul>
+            </article>
+            <article class="problem-card admin-problem">
+                <div class="problem-icon">📋</div>
+                <h3>Placement Cell Pain</h3>
+                <ul>
+                    <li>Hours spent on spreadsheet updates</li>
+                    <li>No real-time seat fulfillment tracking</li>
+                    <li>Duplicate applications difficult to manage</li>
+                    <li>Can't analyze placement trends</li>
+                    <li>Manual certificate generation</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section id="solution" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Unified Platform</p>
+            <h2>One Portal. Complete Control.</h2>
+            <p class="section-subtitle">A comprehensive, intelligent platform designed specifically for campus placement needs</p>
+        </div>
+        <div class="solution-overview">
+            <article class="solution-pillar">
+                <div class="pillar-icon">🎯</div>
+                <h3>Smart Matching</h3>
+                <p>Intelligent recommendation engine matches students to opportunities based on skills, preferences, department, and eligibility.</p>
+            </article>
+            <article class="solution-pillar">
+                <div class="pillar-icon">⚡</div>
+                <h3>Automated Workflows</h3>
+                <p>One-click applications, instant mentor notifications, auto-approvals where possible, and seamless interview scheduling.</p>
+            </article>
+            <article class="solution-pillar">
+                <div class="pillar-icon">📊</div>
+                <h3>Real-Time Insights</h3>
+                <p>Live dashboards showing placement rates, pending approvals, scheduled interviews, and opportunity fulfillment in seconds.</p>
+            </article>
+            <article class="solution-pillar">
+                <div class="pillar-icon">🔐</div>
+                <h3>Enterprise Security</h3>
+                <p>Role-based access control, audit trails, data privacy compliance, and encryption for sensitive student and employer data.</p>
+            </article>
+            <article class="solution-pillar">
+                <div class="pillar-icon">📱</div>
+                <h3>Mobile First</h3>
+                <p>Progressive web app works on any device. Students stay updated. Mentors approve on-the-go. Staff manage from anywhere.</p>
+            </article>
+            <article class="solution-pillar">
+                <div class="pillar-icon">💰</div>
+                <h3>Low Cost</h3>
+                <p>Built on open-source stack (React, NestJS, PostgreSQL). No licensing fees. Works with existing institutional infrastructure.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section id="features" class="section tint">
+        <div class="section-heading">
+            <p class="eyebrow">Platform Features</p>
+            <h2>Everything You Need</h2>
+            <p class="section-subtitle">Comprehensive tools for every stakeholder in the placement ecosystem</p>
+        </div>
+        <div class="feature-grid-enhanced">
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">👤</div>
                 </div>
-              </div>
-              <div class="match-metric" data-width="100">
-                <span>Department</span>
-                <div class="metric-bar-wrapper">
-                  <div class="metric-bar" style="--bar-width: 100%"></div>
-                  <span class="metric-percent">100%</span>
+                <h3>Digital Student Profiles</h3>
+                <p>
+                    One unified profile covering resumes, skills, achievements, certificates, and preferences. 
+                    Updated once per semester. Verified and ready to share.
+                </p>
+                <div class="feature-highlight">Build Once, Use Everywhere</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🧠</div>
                 </div>
-              </div>
-              <div class="match-metric" data-width="90">
-                <span>Preferences</span>
-                <div class="metric-bar-wrapper">
-                  <div class="metric-bar" style="--bar-width: 90%"></div>
-                  <span class="metric-percent">90%</span>
+                <h3>AI-Powered Matching</h3>
+                <p>
+                    Intelligent recommendation engine analyzes skills, department, preferences, eligibility, 
+                    and past performance to surface best-fit opportunities for each student.
+                </p>
+                <div class="feature-highlight">95%+ Match Accuracy</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">📋</div>
                 </div>
-              </div>
-            </div>
-            <button class="match-apply-button">Apply Now</button>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Mentor Approval Workflow Section -->
-    <section id="workflow" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Automated Workflows</p>
-        <h2>Streamlined Mentor Approval Process</h2>
-      </div>
-      <div class="feature-grid">
-        <article>
-          <h3>Student Submits Application</h3>
-          <p>
-            One-click application submission with automatic profile verification, resume validation, and eligibility checks to ensure complete applications.
-          </p>
-        </article>
-        <article>
-          <h3>Auto-Notify Mentor</h3>
-          <p>
-            Instant email and SMS notifications sent to assigned mentors with application context, student history, and quick-access approval dashboard links.
-          </p>
-        </article>
-        <article>
-          <h3>Mentor Reviews & Approves</h3>
-          <p>
-            Context-rich dashboard provides student academic history, previous applications, recommendations, and one-click approval workflow for mentors.
-          </p>
-        </article>
-        <article>
-          <h3>Application Moves Forward</h3>
-          <p>
-            Automatically routed to employer or placement cell with all verification complete, status updates, and seamless integration with interview scheduling.
-          </p>
-        </article>
-        <article>
-          <h3>Workflow Tracking</h3>
-          <p>
-            Real-time visibility into approval status, automated reminders for pending approvals, and comprehensive audit trail for compliance and transparency.
-          </p>
-        </article>
-        <article>
-          <h3>Automated Notifications</h3>
-          <p>
-            Multi-channel notifications via email, SMS, and in-app alerts keep all stakeholders informed at every stage of the approval process.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Certificate Generation Section -->
-    <section id="certificates" class="section tint">
-      <div class="section-heading">
-        <p class="eyebrow">Automated Certification</p>
-        <h2>Instant Certificate Generation</h2>
-        <p class="section-subtitle">Supervisor feedback triggers automatic certificate creation</p>
-      </div>
-      <div class="certificate-grid">
-        <article class="certificate-preview-card">
-          <div class="cert-verified-badge">
-            <span class="verified-icon">✓</span>
-            <span>Verified Certificate</span>
-          </div>
-          <div class="cert-title">
-            <h3>Industrial Training Completion</h3>
-          </div>
-          <div class="cert-body-content">
-            <p class="cert-intro">This certifies that</p>
-            <h4 class="cert-student-name">Rajesh Kumar</h4>
-            <p class="cert-description">
-              has successfully completed <strong>6 weeks</strong> of industrial training in
-            </p>
-            <div class="cert-program">
-              <strong>Full-Stack Web Development</strong>
-            </div>
-            <p class="cert-company">at <strong>TechCorp Solutions Pvt. Ltd.</strong></p>
-            
-            <div class="cert-info-grid">
-              <div class="cert-info-item">
-                <span class="info-label">Duration</span>
-                <span class="info-value">Jan 2024 - Feb 2024</span>
-              </div>
-              <div class="cert-info-item">
-                <span class="info-label">Supervisor</span>
-                <span class="info-value">Dr. Priya Sharma</span>
-              </div>
-              <div class="cert-info-item cert-id">
-                <span class="info-label">Certificate ID</span>
-                <span class="info-value">IT-2024-001234</span>
-              </div>
-            </div>
-            
-            <div class="cert-qr-placeholder">
-              <div class="qr-icon">🔲</div>
-              <span>QR Code Verification</span>
-            </div>
-          </div>
-          <button class="cert-download-button">
-            <span class="download-icon">↓</span>
-            Download PDF
-          </button>
-        </article>
-        
-        <article class="certificate-process-card">
-          <h3>How It Works</h3>
-          <div class="process-steps">
-            <div class="process-step-item">
-              <div class="process-step-number">1</div>
-              <div class="process-step-detail">
-                <h4>Supervisor logs final evaluation</h4>
-                <p>Completion criteria validated automatically</p>
-              </div>
-            </div>
-            <div class="process-step-item">
-              <div class="process-step-number">2</div>
-              <div class="process-step-detail">
-                <h4>System validates completion</h4>
-                <p>All requirements checked against records</p>
-              </div>
-            </div>
-            <div class="process-step-item">
-              <div class="process-step-number">3</div>
-              <div class="process-step-detail">
-                <h4>Certificate auto-generated</h4>
-                <p>Unique ID and digital signature applied</p>
-              </div>
-            </div>
-            <div class="process-step-item">
-              <div class="process-step-number">4</div>
-              <div class="process-step-detail">
-                <h4>Instant notifications sent</h4>
-                <p>Student & mentor receive certificate link</p>
-              </div>
-            </div>
-            <div class="process-step-item">
-              <div class="process-step-number">5</div>
-              <div class="process-step-detail">
-                <h4>Verifiable record created</h4>
-                <p>Blockchain-verifiable certificate stored</p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="features" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Platform Highlights</p>
-        <h2>Built for Students, Mentors, and Placement Cells</h2>
-      </div>
-      <div class="feature-grid">
-        <article>
-          <h3>Unified Profiles</h3>
-          <p>
-            Students maintain verified resumes, skills badges, preferences, and
-            certificates once per semester with role-based visibility.
-          </p>
-        </article>
-        <article>
-          <h3>Smart Opportunity Matching</h3>
-          <p>
-            Eligibility filters, weighted skill scoring, and preference bonuses
-            surface best-fit internships and training programs.
-          </p>
-        </article>
-        <article>
-          <h3>Mentor & Supervisor Workflows</h3>
-          <p>
-            Automated approval requests, interview nudges, milestone tracking,
-            and evaluation flows keep stakeholders aligned.
-          </p>
-        </article>
-        <article>
-          <h3>Placement Command Center</h3>
-          <p>
-            Real-time dashboards, Kanban pipelines, employer engagement metrics,
-            and exportable compliance reports.
-          </p>
-        </article>
-        <article>
-          <h3>Engaging Student Experience</h3>
-          <p>
-            Readiness scores, badge progress, story widgets, and personalized
-            nudges make the journey inspiring.
-          </p>
-        </article>
-        <article>
-          <h3>Low-Cost, Secure Stack</h3>
-          <p>
-            Open-source tooling (React, Node/Nest, PostgreSQL, Redis, MinIO,
-            Keycloak) with role-based access and audit logs.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="personas" class="section tint">
-      <div class="section-heading">
-        <p class="eyebrow">People First</p>
-        <h2>Personas Driving the Experience</h2>
-      </div>
-      <div class="persona-list">
-        <article>
-          <h3>Students</h3>
-          <p>
-            Discover roles, apply in one click, monitor status, log internship
-            outcomes, and showcase verified achievements.
-          </p>
-        </article>
-        <article>
-          <h3>Faculty Mentors</h3>
-          <p>
-            Approve applications, add recommendations, and follow every advisee
-            through interviews to offers.
-          </p>
-        </article>
-        <article>
-          <h3>Placement Officers</h3>
-          <p>
-            Publish verified postings, track seat fulfillment, coordinate
-            employers, and broadcast updates campus-wide.
-          </p>
-        </article>
-        <article>
-          <h3>Employers</h3>
-          <p>
-            Receive curated shortlists, review anonymized snapshots, schedule
-            interviews, and update offer decisions securely.
-          </p>
-        </article>
-        <article>
-          <h3>Industry Supervisors</h3>
-          <p>
-            Record attendance, milestone achievements, and final feedback to
-            trigger instant certificate generation.
-          </p>
-        </article>
-        <article>
-          <h3>Admins</h3>
-          <p>
-            Oversee RBAC, data retention, integrations, and observability to
-            keep the platform compliant and resilient.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="journeys" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Experience Maps</p>
-        <h2>Signature User Journeys</h2>
-      </div>
-      <div class="timeline">
-        <article>
-          <h3>Student</h3>
-          <ul>
-            <li>Complete onboarding wizard & upload resume</li>
-            <li>Review personalized recommendations</li>
-            <li>Apply, track mentor approvals, confirm interviews</li>
-            <li>Receive supervisor feedback & certificates</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Placement Officer</h3>
-          <ul>
-            <li>Publish verified opportunities with competency tags</li>
-            <li>Monitor Kanban pipeline & nudge stakeholders</li>
-            <li>Export analytics for leadership & regulators</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Mentor</h3>
-          <ul>
-            <li>Approve/return applications with context</li>
-            <li>Track advisee pipeline & send nudges</li>
-            <li>Finalize internship evaluations</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Supervisor</h3>
-          <ul>
-            <li>Log weekly attendance & milestones</li>
-            <li>Submit final evaluation</li>
-            <li>Trigger certificate + readiness update</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="architecture" class="section tint">
-      <div class="section-heading">
-        <p class="eyebrow">Under the Hood</p>
-        <h2>Architecture & Data Backbone</h2>
-      </div>
-      <div class="architecture">
-        <div>
-          <h3>Stack Overview</h3>
-          <p>
-            Responsive React/PWA frontend, NestJS API, PostgreSQL core database,
-            Redis cache, MinIO/S3 storage, Keycloak auth, and workflow /
-            notification microservices orchestrated via queues.
-          </p>
-          <p>
-            Integrations cover campus SSO, calendar sync (ICS/Google), SMTP/SMS,
-            and analytics dashboards (Metabase/Grafana).
-          </p>
+                <h3>Verified Job Postings</h3>
+                <p>
+                    Placement cell validates all opportunities. Employers post with competency tags, stipend ranges, 
+                    department filters, and placement conversion potential.
+                </p>
+                <div class="feature-highlight">Pre-Vetted Opportunities</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">✅</div>
+                </div>
+                <h3>Automated Approvals</h3>
+                <p>
+                    Faculty mentors receive context-rich approval requests. One-click decision making. 
+                    Automatic routing based on approval status. Complete audit trail.
+                </p>
+                <div class="feature-highlight">70% Faster Decisions</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">📅</div>
+                </div>
+                <h3>Smart Scheduling</h3>
+                <p>
+                    Interview calendars sync with academic timetables. Automated reminder notifications. 
+                    Multi-slot scheduling for employer flexibility. Real-time calendar conflicts detection.
+                </p>
+                <div class="feature-highlight">Zero Scheduling Conflicts</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">📊</div>
+                </div>
+                <h3>Analytics Dashboard</h3>
+                <p>
+                    Placement cell gets real-time insights: placement rates, pending approvals, 
+                    interviews scheduled, seat fulfillment, student readiness scores, and trend analysis.
+                </p>
+                <div class="feature-highlight">Data-Driven Decisions</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🎓</div>
+                </div>
+                <h3>Automated Certificates</h3>
+                <p>
+                    Supervisors log feedback. System validates completion criteria. Certificates auto-generate 
+                    with unique IDs and digital signatures. QR codes for instant verification.
+                </p>
+                <div class="feature-highlight">Instant Certificate Gen</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🔔</div>
+                </div>
+                <h3>Multi-Channel Alerts</h3>
+                <p>
+                    Email, SMS, and in-app notifications keep all stakeholders informed. 
+                    Intelligent timing prevents notification fatigue. Personalized preferences respected.
+                </p>
+                <div class="feature-highlight">Zero Missed Updates</div>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🔐</div>
+                </div>
+                <h3>Role-Based Access</h3>
+                <p>
+                    Students see only their own data. Employers view only relevant candidates. 
+                    Placement cell has full visibility. Mentors see their advisees. Complete privacy controls.
+                </p>
+                <div class="feature-highlight">Enterprise Security</div>
+            </article>
         </div>
-        <pre>
-Frontend → API Gateway → Services (Profiles, Opportunities, Matching, Workflow)
-          ↘ Redis Cache / PostgreSQL / Object Storage
-Workflow → Notifications → Email / SMS / Calendar
-Observability → Logs, Metrics, Alerts</pre
-        >
-      </div>
-      <div class="data-cards">
-        <article>
-          <h4>StudentProfile</h4>
-          <p>academic_details, skills[], resume_url, badges[], readiness_score</p>
-        </article>
-        <article>
-          <h4>Opportunity</h4>
-          <p>title, department_ids[], required_skills[], stipend_range, status</p>
-        </article>
-        <article>
-          <h4>Application</h4>
-          <p>student_id, opportunity_id, status, mentor_id, score_breakdown</p>
-        </article>
-        <article>
-          <h4>Feedback & Logs</h4>
-          <p>mentor_decisions, supervisor_reviews, audit trails, notifications</p>
-        </article>
-      </div>
     </section>
 
-    <section id="roadmap" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Execution Plan</p>
-        <h2>Roadmap & Workstreams</h2>
-      </div>
-      <div class="roadmap">
-        <article>
-          <h3>Discovery (Weeks 1-2)</h3>
-          <p>Stakeholder workshops, persona validation, UX research.</p>
-        </article>
-        <article>
-          <h3>Architecture (Weeks 3-4)</h3>
-          <p>Infra setup, CI/CD, auth integration, schema design.</p>
-        </article>
-        <article>
-          <h3>MVP Build (Weeks 5-10)</h3>
-          <p>Profiles, postings, matching, applications, approvals, notifications.</p>
-        </article>
-        <article>
-          <h3>Pilot (Weeks 11-12)</h3>
-          <p>Limited rollout, metrics, tuning matching weights.</p>
-        </article>
-        <article>
-          <h3>Enhancements (Weeks 13-16)</h3>
-          <p>Analytics, scheduler, supervisor portal, certificates.</p>
-        </article>
-        <article>
-          <h3>Launch (Weeks 17-18)</h3>
-          <p>Campus onboarding, training, support playbooks.</p>
-        </article>
-      </div>
+    <!-- Student Features Section -->
+    <section id="students" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Student Experience</p>
+            <h2>Placement Journey Made Simple</h2>
+            <p class="section-subtitle">From discovering opportunities to landing placements</p>
+        </div>
+        <div class="journey-grid">
+            <article class="journey-card">
+                <div class="journey-header">
+                    <div class="journey-icon">📝</div>
+                    <h3>Step 1: Create Profile</h3>
+                </div>
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Upload resume once, use everywhere</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Add skills, achievements, preferences</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Get placement readiness score</p>
+                    </div>
+                </div>
+            </article>
+            <article class="journey-card">
+                <div class="journey-header">
+                    <div class="journey-icon">🎯</div>
+                    <h3>Step 2: Discover Opportunities</h3>
+                </div>
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>See AI-matched opportunities first</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Filter by stipend, department, type</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>View detailed company & role info</p>
+                    </div>
+                </div>
+            </article>
+            <article class="journey-card">
+                <div class="journey-header">
+                    <div class="journey-icon">✉️</div>
+                    <h3>Step 3: Apply in One Click</h3>
+                </div>
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>One-click application submission</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Auto-notify mentor for approval</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Instant confirmation & updates</p>
+                    </div>
+                </div>
+            </article>
+            <article class="journey-card">
+                <div class="journey-header">
+                    <div class="journey-icon">👁️</div>
+                    <h3>Step 4: Track Everything</h3>
+                </div>
+                <div class="journey-steps">
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Real-time status tracking</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Interview schedule notifications</p>
+                    </div>
+                    <div class="journey-step">
+                        <span class="step-number">✓</span>
+                        <p>Offer & feedback notifications</p>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
 
-    <footer class="section tint">
-      <div class="footer-content">
-        <div>
-          <p class="eyebrow">CampusFlow</p>
-          <p>
-            A secure, low-cost internship and placement platform designed to
-            empower students and placement teams alike.
-          </p>
+    <!-- Institution Features Section -->
+    <section id="institution" class="section tint">
+        <div class="section-heading">
+            <p class="eyebrow">Placement Cell Control</p>
+            <h2>Full Visibility. Complete Control.</h2>
+            <p class="section-subtitle">Everything placement officers need to manage campus recruitment</p>
         </div>
-        <div>
-          <p class="eyebrow">Contact</p>
-          <p>placement@campusflow.edu</p>
+        <div class="institution-grid">
+            <article class="institution-feature">
+                <div class="inst-icon">📊</div>
+                <h3>Real-Time Dashboard</h3>
+                <p>Live metrics: placement rates, pending approvals, interviews scheduled, seat fulfillment, student readiness. Export reports for leadership and regulators.</p>
+            </article>
+            <article class="institution-feature">
+                <div class="inst-icon">🏢</div>
+                <h3>Employer Management</h3>
+                <p>Verify employers. Manage postings. View shortlists. Track offer decisions. Coordinate multiple employers simultaneously.</p>
+            </article>
+            <article class="institution-feature">
+                <div class="inst-icon">📋</div>
+                <h3>Student Management</h3>
+                <p>View all student profiles. Track individual placement progress. Manage approvals. Send broadcast notifications. Generate aggregate analytics.</p>
+            </article>
+            <article class="institution-feature">
+                <div class="inst-icon">✅</div>
+                <h3>Approval Workflows</h3>
+                <p>Define approval hierarchies. Route applications automatically. Set eligibility criteria. Create workflow templates. Full audit trail.</p>
+            </article>
+            <article class="institution-feature">
+                <div class="inst-icon">📈</div>
+                <h3>Analytics & Reports</h3>
+                <p>Placement rate trends. Salary distribution. Industry hotspots. Department-wise analysis. Historical comparisons. Predictive insights.</p>
+            </article>
+            <article class="institution-feature">
+                <div class="inst-icon">🎓</div>
+                <h3>Certificate Management</h3>
+                <p>Auto-generate certificates. Manage QR codes. Verify completions. Track compliance. Archive all records. Instant verification links.</p>
+            </article>
         </div>
-        <div>
-          <p class="eyebrow">Next Step</p>
-          <p>Book a discovery workshop to kickstart your rollout.</p>
+    </section>
+
+    <!-- Impact & Success Metrics -->
+    <section id="impact" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Proven Impact</p>
+            <h2>Measurable Results</h2>
+            <p class="section-subtitle">What institutions can expect from implementing PlacementHub</p>
         </div>
-      </div>
+        <div class="impact-grid">
+            <article class="impact-card">
+                <div class="impact-number">70%</div>
+                <div class="impact-label">Faster Approvals</div>
+                <p>Automated workflows reduce decision time from days to hours</p>
+            </article>
+            <article class="impact-card">
+                <div class="impact-number">90%</div>
+                <div class="impact-label">Administrative Time Saved</div>
+                <p>Eliminate manual spreadsheets and email chasing</p>
+            </article>
+            <article class="impact-card">
+                <div class="impact-number">100%</div>
+                <div class="impact-label">Deadline Compliance</div>
+                <p>Automatic reminders ensure no opportunities are missed</p>
+            </article>
+            <article class="impact-card">
+                <div class="impact-number">95%+</div>
+                <div class="impact-label">Match Accuracy</div>
+                <p>AI-powered matching gets the right students to right roles</p>
+            </article>
+            <article class="impact-card">
+                <div class="impact-number">2-3x</div>
+                <div class="impact-label">More Applications</div>
+                <p>Increased placement opportunities with better visibility</p>
+            </article>
+            <article class="impact-card">
+                <div class="impact-number">100%</div>
+                <div class="impact-label">Data Security</div>
+                <p>Role-based access and encryption protect sensitive information</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Key Differentiators -->
+    <section id="differentiators" class="section tint">
+        <div class="section-heading">
+            <p class="eyebrow">Why PlacementHub</p>
+            <h2>Built Specifically for Campus Realities</h2>
+            <p class="section-subtitle">Not a generic HR tool. Built from the ground up for student placement challenges.</p>
+        </div>
+        <div class="differentiators-grid">
+            <article class="differentiator-card">
+                <div class="diff-header">🎓</div>
+                <h3>Campus-Centric Design</h3>
+                <p>Designed with students, mentors, and placement officers. Understands academic calendars, approval hierarchies, and student needs.</p>
+            </article>
+            <article class="differentiator-card">
+                <div class="diff-header">💰</div>
+                <h3>Budget Friendly</h3>
+                <p>Open-source stack. No licensing fees. Works with existing IT infrastructure. Low implementation cost. Minimal ongoing expenses.</p>
+            </article>
+            <article class="differentiator-card">
+                <div class="diff-header">🔐</div>
+                <h3>Data Privacy First</h3>
+                <p>Strict compliance with institutional data policies. Role-based access controls. GDPR-ready. Complete audit trails. Student data protected.</p>
+            </article>
+            <article class="differentiator-card">
+                <div class="diff-header">⚡</div>
+                <h3>Fast Implementation</h3>
+                <p>4-week rollout possible. Minimal disruption. Existing data migration supported. Staff training included. Go-live support provided.</p>
+            </article>
+            <article class="differentiator-card">
+                <div class="diff-header">📱</div>
+                <h3>Mobile First</h3>
+                <p>Works on any device. Progressive web app. Offline capabilities. Native app experience. No separate mobile app development needed.</p>
+            </article>
+            <article class="differentiator-card">
+                <div class="diff-header">🤝</div>
+                <h3>Extensible</h3>
+                <p>APIs for employer integrations. Custom workflow templates. Department-specific configurations. Scales with institution growth.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section id="tech" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Technology</p>
+            <h2>Modern, Scalable, Open-Source</h2>
+            <p class="section-subtitle">Enterprise-grade architecture built on proven technologies</p>
+        </div>
+        <div class="architecture-overview">
+            <article class="architecture-card">
+                <div class="arch-icon-wrapper">
+                    <div class="arch-icon">💻</div>
+                </div>
+                <h3>Frontend</h3>
+                <p>React PWA for responsive, mobile-first experience. Redux for state management. Real-time updates. Offline support.</p>
+                <div class="tech-stack">React • PWA • Redux</div>
+            </article>
+            <article class="architecture-card">
+                <div class="arch-icon-wrapper">
+                    <div class="arch-icon">🔌</div>
+                </div>
+                <h3>Backend API</h3>
+                <p>NestJS microservices. GraphQL and REST APIs. Rate limiting. Request validation. Comprehensive logging.</p>
+                <div class="tech-stack">NestJS • GraphQL • REST</div>
+            </article>
+            <article class="architecture-card">
+                <div class="arch-icon-wrapper">
+                    <div class="arch-icon">🗄️</div>
+                </div>
+                <h3>Database</h3>
+                <p>PostgreSQL for reliable data storage. Redis for caching and performance. MinIO for secure file storage.</p>
+                <div class="tech-stack">PostgreSQL • Redis • MinIO</div>
+            </article>
+            <article class="architecture-card">
+                <div class="arch-icon-wrapper">
+                    <div class="arch-icon">🔐</div>
+                </div>
+                <h3>Security</h3>
+                <p>Keycloak for authentication. OAuth2/OIDC support. Role-based access control. Data encryption at rest and in transit.</p>
+                <div class="tech-stack">Keycloak • OAuth2 • TLS</div>
+            </article>
+            <article class="architecture-card">
+                <div class="arch-icon-wrapper">
+                    <div class="arch-icon">📨</div>
+                </div>
+                <h3>Notifications</h3>
+                <p>Message queues for async processing. Email, SMS, and in-app alerts. Intelligent retry logic. Delivery tracking.</p>
+                <div class="tech-stack">RabbitMQ • SMTP • Twilio</div>
+            </article>
+            <article class="architecture-card">
+                <div class="arch-icon-wrapper">
+                    <div class="arch-icon">📊</div>
+                </div>
+                <h3>Analytics</h3>
+                <p>Prometheus for metrics. ELK stack for centralized logging. Grafana dashboards. OpenTelemetry for distributed tracing.</p>
+                <div class="tech-stack">Prometheus • ELK • Grafana</div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Implementation Timeline -->
+    <section id="roadmap" class="section tint">
+        <div class="section-heading">
+            <p class="eyebrow">Implementation</p>
+            <h2>Phased Rollout Plan</h2>
+            <p class="section-subtitle">18-week journey from discovery to full campus deployment</p>
+        </div>
+        <div class="roadmap-timeline">
+            <article class="roadmap-phase">
+                <div class="phase-header">
+                    <div class="phase-icon">🔍</div>
+                    <h3>Phase 1: Discovery</h3>
+                    <span class="phase-duration">Weeks 1-2</span>
+                </div>
+                <div class="phase-content">
+                    <p>Understand institutional workflows, gather requirements from all stakeholders, validate use cases</p>
+                    <div class="phase-tasks">
+                        <span class="task">Stakeholder Interviews</span>
+                        <span class="task">Workflow Mapping</span>
+                        <span class="task">Requirements Doc</span>
+                    </div>
+                </div>
+            </article>
+            <article class="roadmap-phase">
+                <div class="phase-header">
+                    <div class="phase-icon">🏗️</div>
+                    <h3>Phase 2: Architecture</h3>
+                    <span class="phase-duration">Weeks 3-4</span>
+                </div>
+                <div class="phase-content">
+                    <p>Infrastructure setup, database schema design, API specification, security architecture review</p>
+                    <div class="phase-tasks">
+                        <span class="task">Infrastructure Setup</span>
+                        <span class="task">Database Design</span>
+                        <span class="task">Security Plan</span>
+                    </div>
+                </div>
+            </article>
+            <article class="roadmap-phase">
+                <div class="phase-header">
+                    <div class="phase-icon">⚙️</div>
+                    <h3>Phase 3: MVP Build</h3>
+                    <span class="phase-duration">Weeks 5-10</span>
+                </div>
+                <div class="phase-content">
+                    <p>Core features: profiles, postings, matching, applications, approvals, notifications</p>
+                    <div class="phase-tasks">
+                        <span class="task">Core Features</span>
+                        <span class="task">API Development</span>
+                        <span class="task">Testing</span>
+                    </div>
+                </div>
+            </article>
+            <article class="roadmap-phase">
+                <div class="phase-header">
+                    <div class="phase-icon">🧪</div>
+                    <h3>Phase 4: Pilot</h3>
+                    <span class="phase-duration">Weeks 11-12</span>
+                </div>
+                <div class="phase-content">
+                    <p>Limited rollout with select departments, collect feedback, tune matching weights, performance optimization</p>
+                    <div class="phase-tasks">
+                        <span class="task">Beta Testing</span>
+                        <span class="task">Tuning</span>
+                        <span class="task">Feedback Collection</span>
+                    </div>
+                </div>
+            </article>
+            <article class="roadmap-phase">
+                <div class="phase-header">
+                    <div class="phase-icon">✨</div>
+                    <h3>Phase 5: Enhancements</h3>
+                    <span class="phase-duration">Weeks 13-16</span>
+                </div>
+                <div class="phase-content">
+                    <p>Advanced features: analytics, interview scheduling, supervisor portal, certificate generation, integrations</p>
+                    <div class="phase-tasks">
+                        <span class="task">Analytics Dashboard</span>
+                        <span class="task">Scheduling</span>
+                        <span class="task">Certificates</span>
+                    </div>
+                </div>
+            </article>
+            <article class="roadmap-phase">
+                <div class="phase-header">
+                    <div class="phase-icon">🚀</div>
+                    <h3>Phase 6: Go-Live</h3>
+                    <span class="phase-duration">Weeks 17-18</span>
+                </div>
+                <div class="phase-content">
+                    <p>Campus-wide onboarding, staff training, documentation, support setup, live migration</p>
+                    <div class="phase-tasks">
+                        <span class="task">Staff Training</span>
+                        <span class="task">Documentation</span>
+                        <span class="task">Go-Live Support</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Why This Works -->
+    <section id="benefits" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">The Advantage</p>
+            <h2>A Win for Everyone</h2>
+            <p class="section-subtitle">How PlacementHub benefits each stakeholder</p>
+        </div>
+        <div class="benefits-grid">
+            <article class="benefit-card">
+                <div class="benefit-icon">👨‍🎓</div>
+                <h3>Students Win</h3>
+                <ul class="benefit-list">
+                    <li>✓ Find perfect opportunities in seconds</li>
+                    <li>✓ Apply with one click</li>
+                    <li>✓ Never miss a deadline</li>
+                    <li>✓ Track status in real-time</li>
+                    <li>✓ Get instant certificates</li>
+                </ul>
+            </article>
+            <article class="benefit-card">
+                <div class="benefit-icon">👨‍🏫</div>
+                <h3>Mentors Win</h3>
+                <ul class="benefit-list">
+                    <li>✓ Context-rich approval requests</li>
+                    <li>✓ One-click decisions</li>
+                    <li>✓ Track advisee progress</li>
+                    <li>✓ Complete audit trail</li>
+                    <li>✓ Minimal administrative burden</li>
+                </ul>
+            </article>
+            <article class="benefit-card">
+                <div class="benefit-icon">📊</div>
+                <h3>Placement Cell Wins</h3>
+                <ul class="benefit-list">
+                    <li>✓ Eliminate manual spreadsheets</li>
+                    <li>✓ Real-time placement metrics</li>
+                    <li>✓ Automated compliance reports</li>
+                    <li>✓ Data-driven decision making</li>
+                    <li>✓ Reclaim hours each week</li>
+                </ul>
+            </article>
+            <article class="benefit-card">
+                <div class="benefit-icon">🏢</div>
+                <h3>Institution Wins</h3>
+                <ul class="benefit-list">
+                    <li>✓ Increase placement rates</li>
+                    <li>✓ Professional image boost</li>
+                    <li>✓ Better student-employer matching</li>
+                    <li>✓ Scalable solution</li>
+                    <li>✓ Low total cost of ownership</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="section tint">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Campus Placement Process?</h2>
+            <p>Join institutions leading the placement revolution. Implement PlacementHub and see immediate results.</p>
+            <div class="cta-buttons">
+                <button class="primary">Schedule Demo</button>
+                <button class="secondary">Download Full Proposal</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section">
+        <div class="footer-content">
+            <div>
+                <p class="eyebrow">PlacementHub</p>
+                <p>
+                    Transforming campus placements through intelligent, role-based workflows 
+                    that connect students to opportunities and institutions to success.
+                </p>
+            </div>
+            <div>
+                <p class="eyebrow">Key Values</p>
+                <ul>
+                    <li>Student-Centric Design</li>
+                    <li>Data Privacy</li>
+                    <li>Transparency</li>
+                    <li>Affordability</li>
+                </ul>
+            </div>
+            <div>
+                <p class="eyebrow">Get Started</p>
+                <p>Contact your IT department or placement officer to request a demo.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.5);">
+                    Built for SIH 2025 | Transforming India's Campus Placements
+                </p>
+            </div>
+        </div>
     </footer>
 
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
-
